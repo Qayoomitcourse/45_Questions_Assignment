@@ -5,4 +5,5 @@ let personName: String = "abdul qayoom";
 
 console.log(personName.toLowerCase());
 console.log(personName.toUpperCase());
-console.log(personName.charAt(0).toUpperCase() + personName.slice(1));
+console.log(personName.replace(/\b\w/g, (char)=>char.toUpperCase()));
+
